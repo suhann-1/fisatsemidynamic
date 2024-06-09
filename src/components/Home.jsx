@@ -6,18 +6,18 @@ const Home = () => {
     <div>
         <Navbar/>
         <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
-    <div className="carousel-inner">
-      <div className="carousel-item active">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
         <img src="https://fisat.ac.in/wp-content/uploads/2023/09/Enquiry-scaled.jpg" class="d-block w-100" alt="..."/>
       </div>
-      <div className="carousel-item">
+      <div class="carousel-item">
         <img src="https://images.collegedunia.com/public/college_data/images/appImage/13462_FISAT_NEW.jpg" class="d-block w-100" alt="..."/>
       </div>
-      <div className="carousel-item">
+      <div class="carousel-item">
         <img src="https://fisat.ac.in/wp-content/uploads/2022/05/cse-banner.jpg" class="d-block w-100" alt="..."/>
       </div>
-      <div className="carousel-item">
-        <img src="https://lh5.googleusercontent.com/jARJMxs70OJTwC4oJilfDkK3WgSefr3FALzyWua_oSJtBBkJBlrY4oMIzlrhTmoPci7UcwgR4mEp2GbG1ZqYCRwMcy_7Oy3kRrgyNsGeLtriz8ag6Zv9adP1EDXj1jtMiPKBm9KXPPaJuC7mzg" class="d-block w-100" alt="..."/>
+      <div class="carousel-item">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTs-DiNQcHZVm7Bt7-GUlSRosY_4JHW0gcwFg&s" class="d-block w-100" alt="..."/>
       </div>
     </div>
     <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
@@ -28,8 +28,7 @@ const Home = () => {
       <span class="carousel-control-next-icon" aria-hidden="true"></span>
       <span class="visually-hidden">Next</span>
     </button>
-  </div>
-  </div>
+  </div></div>
   )
 }
 
