@@ -1,10 +1,11 @@
 import React, { useState } from 'react'
 import Navbar from './Navbar'
+import axios from 'axios'
 
 const Add = () => {
     const [data,changeData]=useState(
         {
-            "fname":"",
+            "firstname":"",
             "lastname":"",
             "college":"",
             "course":"",
@@ -20,7 +21,27 @@ const Add = () => {
     }
             const readValue=()=>{
                 console.log(data)
+                axios.post("https://courseapplogix.onrender.com/addstudents",data).then(
+                    (response)=>{
+                        console.log(response.data)
+                        if(response.data.status=="success"){
+                            alert("successfully added")
+                            
+                           
+                        } else{
+                            alert("failed to add")
+                        }
+                    }
+                    ).catch(
+                            (error)=>(
+                                alert(error.message)
+                            )
+                        )
+                        
+                    
+                
             }
+        
 
     
   return (
@@ -33,7 +54,7 @@ const Add = () => {
                     <div className="row g-3">
                         <div className="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
                             <label htmlFor="" className="form-label">First Name</label>
-                            <input type="text" className="form-control" name='fname' value={data.fname} onChange={inputHandler} />
+                            <input type="text" className="form-control" name='firstname' value={data.firstname} onChange={inputHandler} />
                         </div>
                         <div className="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
                             <label htmlFor="" className="form-label">Last Name</label>
